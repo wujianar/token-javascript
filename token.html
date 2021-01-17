@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS token生成</title>
+</head>
+<body>
+
+
+    <script src="./libs/sha256.min.js"></script>
+    <script src="./token.js"></script>
+    <script>
+        const accessKey = '6e59b44afb904ffa9d628e69b18c14a0';
+        const accessSecret = 'b60e17e39dca45bf9e2d5b393ee823c45b21218456494cf19cd12fe4fd036e5e';
+        const expires = 3600;
+        const token = getToken(accessKey, accessSecret, expires);
+        console.info('token = ', token);
+    </script>
+</body>
+</html>
